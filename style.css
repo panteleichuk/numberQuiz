@@ -7,7 +7,9 @@ body{
     color: azure;
     perspective: 500px;
 }
-
+:root{
+    --w:30vw;
+}
 .begin, .final{
     display: none;
 }
@@ -37,13 +39,14 @@ body{
 
 
 /* kyb */
+
 .cube{
-    width: 300px;
-    height: 300px;
+    width: calc( var(--w)/1.5);
+    height: calc( var(--w)/1.5);
     position: relative;
     transform-style: preserve-3d;
     top:100px;
-    left:35%;
+    left:40%;
     font-size: 50px;
 }
 .side{
@@ -60,21 +63,21 @@ body{
  
 }
 .front{
-    transform: translateZ(150px);
+    transform: translateZ(calc( var(--w)/3));
 }
 .back{
-    transform:rotateY(180deg) translateZ(150px);
+    transform:rotateY(180deg) translateZ(calc( var(--w)/3));
 }
 .left{
-    transform: rotateY(-90deg) translateZ(150px);
+    transform: rotateY(-90deg) translateZ(calc( var(--w)/3));
 }
 .right{
-    transform: rotateY(90deg) translateZ(150px);
+    transform: rotateY(90deg) translateZ(calc( var(--w)/3));
 }
 .top{
-    transform: rotateX(90deg) translateZ(150px);
+    transform: rotateX(90deg) translateZ(calc( var(--w)/3));
 }
 .bottom{
-    transform: rotateX(-90deg) translateZ(150px);
+    transform: rotateX(-90deg) translateZ(calc( var(--w)/3));
 }
 /*  */
