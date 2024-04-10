@@ -45,7 +45,7 @@ body{
     height: calc( var(--w)/1.5);
     position: relative;
     transform-style: preserve-3d;
-    top:100px;
+    top:10%;
     left:40%;
     font-size: 4em;
 }
